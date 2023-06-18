@@ -1,0 +1,67 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Hacker Rank\n\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\nFollow the links below:\nread them carefully and solve them then copy-paste your solution below in Code Block"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Required**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function birthdayCakeCandles(candles) {\n    // Write your code here\n    let maxe =Math.max(...candles);\n    let sum =0;\n    for(let i =0; i<candles.length;i++)\n    {\n        \n        if(candles[i]==maxe)\n        {\n            ++sum;\n        }\n    }\nreturn sum;\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Optional**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Compare The Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "\nfunction compareTriplets(a, b) {\n    let result = [];\n    let aliceScore=0;\n    let bobScore =0;\n    for(let i = 0; i<a.length;i++)\n    {\n        if((a[i]>=1&&a[i]<=100)&&(b[i]>=1&&b[i]<=100))\n        {\n            if(a[i]>b[i])\n            {\n                aliceScore++;\n            }\n            if(b[i]>a[i])\n            {\n                bobScore++;\n            }\n        }\n        \n    }\n    result.push(aliceScore,bobScore);\n    return result;\n    }"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function migratoryBirds(arr) {\n    // Write your code here\n    let result = []\n    let typ1=0; let typ2=0; let typ3 =0; let typ4=0; let typ5=0;\n    for (let i = 0; i < arr.length; i++) \n    {\n      if(arr[i]>=1 && arr[i]<=5)\n      {\n        if(arr[i]==1)\n        {\n          typ1++;\n          \n        }\n        else if(arr[i]==2)\n        {\n          typ2++;\n          \n        }\n        else if(arr[i]==3)\n        {\n          typ3++;\n          \n        }\n        else if(arr[i]==4)\n        {\n          typ4++;\n         \n        }\n        else if(arr[i]==5)\n        {\n          typ5++;\n        }\n\n      }\n      else\n      {\n        console.log(\"Invalid\")\n      }\n      \n    }\n    \n    result.push(typ1,typ2,typ3,typ4,typ5);\nlet n;\nlet x =Math.max(...result);\n    for (var i = 0; i < result.length; i++) {\n          if(result[i]== x)\n          {\n            n =i+1;\n            break;\n          }\n\n    }\n    return n;\n}\n"
+            ],
+            "outputs": []
+        }
+    ]
+}
