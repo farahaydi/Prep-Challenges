@@ -24,10 +24,8 @@
 //
 
 const LastWord = (str) => {
-    // Find the index of the last space character
     const lastSpaceIndex = str.lastIndexOf(" ");
   
-    // Use the slice method to extract the last word
     const lastWord = str.slice(lastSpaceIndex + 1);
   
     return lastWord;
@@ -45,10 +43,8 @@ const LastWord = (str) => {
 //  Output: "potter"
 
 const LastWord_2 = (str) => {
-    // Split the string into an array of words
     const words = str.split(" ");
   
-    // Get the last word from the array
     const lastWord = words[words.length - 1];
   
     return lastWord;
@@ -75,26 +71,20 @@ const LastWord_2 = (str) => {
 //
 
 const replaceWords = (str) => {
-    // Create an array of words by splitting the string
     const words = str.split(" ");
   
-    // Define the words to be replaced and their corresponding replacements
     const replacements = {
       "I": "We",
       "am": "are",
       "was": "were"
     };
   
-    // Iterate over the array of words
     for (let i = 0; i < words.length; i++) {
-      // Check if the word is in the replacements object
       if (words[i] in replacements) {
-        // Replace the word with its corresponding value from the replacements object
         words.splice(i, 1, replacements[words[i]]);
       }
     }
   
-    // Join the modified array of words back into a string
     const modifiedStr = words.join(" ");
   
     return modifiedStr;
